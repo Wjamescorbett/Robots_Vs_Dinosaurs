@@ -5,13 +5,13 @@ class Robot:
         self.name = name
         self.health = health
         self.weapons = []
-        self.armory_populator()
+        self.armory_populate()
         self.weapon = self.pick_weapon()
 
     def attack(self, dinosaur):
         dinosaur.health -= self.weapon.attack_power
 
-    def armory_populator(self):
+    def armory_populate(self):
         weapon1 = Weapon('w1', 20)
         weapon2 = Weapon('w2', 15)
         weapon3 = Weapon('w3', 25)
