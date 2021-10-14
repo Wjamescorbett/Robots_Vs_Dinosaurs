@@ -15,9 +15,9 @@ class Robot:
         weapon1 = Weapon('w1', 20)
         weapon2 = Weapon('w2', 15)
         weapon3 = Weapon('w3', 25)
-        weapons.append(weapon1)
-        weapons.append(weapon2)
-        weapons.append(weapon3)
+        self.weapons.append(weapon1)
+        self.weapons.append(weapon2)
+        self.weapons.append(weapon3)
 
     def pick_weapon(self):
         user_weapon_choice = input("Which weapon? 1, 2, or 3.")
