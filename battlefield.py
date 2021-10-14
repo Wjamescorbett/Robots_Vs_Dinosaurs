@@ -23,21 +23,24 @@ class Battlefield:
         print(f"Start of turn {round_number}! Dino's turn. ")
         self.dino_turn(self.herd.dinosaurs[0])
         print("Dino's turn over, robots go. ")
-        self.robot_turn()
+        self.robot_turn(self.fleet.robots[0])
         round_number += 1
 
     def dino_turn(self, dinosaur):
-        self.herd.dinosaurs[0].attack(self.fleet.robots[0])
+        print(f"{str(dinosaur)} DINO TURN TEST")
+        self.show_dino_opponent_options()
 
 
-    # def robot_turn(self, robot):
+    def robot_turn(self, robot):
+        print(f"{robot} NOW ROBOTS TURN")
+        self.show_robot_opponent_options()
 
 
-    # def show_dino_opponent_options(self):
+    def show_dino_opponent_options(self):
+        print("ROBOTS CHOOSE A FIGHTER")
 
-
-    # def show_robo_opponent_options(self):
-
+    def show_robot_opponent_options(self):
+        print("DINOSAURS CHOOSE A FIGHTER")
 
     # def display_winners(self):
     #     if herd.health == 0:
