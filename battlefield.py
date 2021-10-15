@@ -19,15 +19,15 @@ class Battlefield:
 
     def battle(self):
         round_number = 1
-        print("Made it this far.")
         print(f"Start of round {round_number}! Dino's turn. ")
         self.dino_turn(self.herd.dinosaurs[0])
         print("Dino's turn over, robots go. ")
         self.robot_turn(self.fleet.robots[0])
         round_number += 1
 
-    def dino_turn(self, dinosaur):
-        print(f"{dinosaur} DINO TURN TEST")
+    def dino_turn(self, attacking_dinosaur):
+        print(f"{attacking_dinosaur} DINO TURN TEST")
+        # self.herd.dinosaur.attack(self.fleet.robots[0])
         self.show_dino_opponent_options()
 
 
